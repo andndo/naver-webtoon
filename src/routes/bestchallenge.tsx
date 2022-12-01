@@ -1,6 +1,6 @@
 import React from "react";
 
-function bestchallenge() {
+function Bestchallenge() {
   return (
     <>
       <h1>asdfcawe</h1>
@@ -8,4 +8,4 @@ function bestchallenge() {
   );
 }
 
-export default bestchallenge;
+export default Bestchallenge;

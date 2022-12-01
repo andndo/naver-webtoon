@@ -1,6 +1,6 @@
 import React from "react";
 
-function mypage() {
+function Mypage() {
   return (
     <>
       <h1>asdfcawe</h1>
@@ -8,4 +8,4 @@ function mypage() {
   );
 }
 
-export default mypage;
+export default Mypage;
