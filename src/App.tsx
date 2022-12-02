@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/webtoon" element={<Webtoon/>}/>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/Webtoon" element={<Webtoon/>}/>
         <Route path="/Bestchallenge" element={<Bestchallenge/>}/>
         <Route path="/Mypage" element={<Mypage/>}/>
       </Routes>
