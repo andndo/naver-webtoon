@@ -20,15 +20,15 @@
   padding: 10px 12px;
   font-size: 14px;
 }
-.vacuum{
-  width:220px
+.vacuum {
+  width: 220px;
 }
-.RightHeader{
+.RightHeader {
   display: flex;
   gap: 10px;
 }
 
-.RightHeader > button{
+.RightHeader > button {
   margin-left: 40px;
 }
 
@@ -43,12 +43,36 @@
   right: 0;
   margin: 0;
 }
-.Header2{
+.Header2 {
   width: 970px;
   margin: auto;
   display: flex;
-  gap: 30px;  
+  gap: 30px;
 }
-.Header2 > div{
+.Header2 > div {
   cursor: pointer;
+}
+.advertisementImg {
+  background-color: blue;
+}
+
+.advertisementImg > img {
+  width: 582px;
+  height: 195px;
+}
+.slideMainDiv {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 980px;
+  border: 1px;
+}
+.slideSub {
+  width: 694px;
+  height: 252px;
+}
+.slideSub2 {
+  width: 240px;
+  height: 252px;
+  padding: 18px;
 }
