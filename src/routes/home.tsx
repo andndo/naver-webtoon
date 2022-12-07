@@ -99,7 +99,23 @@ function Home() {
           </div>
         </div>
         <div className="webtoonMain">
-          <div className="recommendWebtoon"></div>
+          <div className="recommendWebtoon">
+            <div className="recommendGenre"></div>
+            <div className="recommendBestChallenge"></div>
+            <div className="recommendComic"></div>
+            
+          </div>
+          <div className="webtoonSub">
+            <button>웹툰 올리기<img/></button>
+            <img/>
+            <div className="popularityRise"></div>
+            <div className="popularityReal-time"></div>
+            <img/>
+            <img/>
+            <img/>
+            <img/>
+            <button>웹툰 고객센터</button>
+          </div>
         </div>
       </div>
     </>
