@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import "../App.css";
+import "../../App.css";
 import Year from "react-live-clock";
 import Month from "react-live-clock";
+import * as S from "./styles"
 
 function Home() {
   const sub: string[] = ["홈", "웹툰", "베스트도전", "도전만화", "마이페이지"];
@@ -103,24 +104,27 @@ function Home() {
             <div className="recommendGenre"></div>
             <div className="recommendBestChallenge"></div>
             <div className="recommendComic"></div>
-            
           </div>
-          <div className="webtoonSub">
-            <button>웹툰 올리기<img/></button>
-            <img/>
+          <S.webtoonSub>
+            <button>
+              웹툰 올리기
+              <img />
+            </button>
+            <img />
             <div className="popularityRise"></div>
             <div className="popularityReal-time"></div>
-            <img/>
-            <img/>
-            <img/>
-            <img/>
+            <img />
+            <img />
+            <img />
+            <img />
             <button>웹툰 고객센터</button>
-          </div>
+          </S.webtoonSub>
         </div>
       </div>
     </>
   );
 }
+
 const Header = styled.div``;
 const MainDiv = styled.div``;
 const Search = styled.div`
