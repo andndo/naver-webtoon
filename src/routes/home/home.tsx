@@ -1,14 +1,27 @@
 import React from "react";
-import styled from "styled-components";
 import "../../App.css";
 import Year from "react-live-clock";
 import Month from "react-live-clock";
-import * as S from "./styles"
+import * as S from "./styles";
 
 function Home() {
   const sub: string[] = ["홈", "웹툰", "베스트도전", "도전만화", "마이페이지"];
   const sequenceLi: string[] = ["인기순", "업데이트순", "조회순", "별점순"];
-
+  const genre: string[] = [
+    "일상",
+    "개그",
+    "판타지",
+    "액션",
+    "드라마",
+    "순정",
+    "감성",
+    "스릴러",
+    "무협/사극",
+    "스포츠",
+  ];
+  const sequenceLiList = sequenceLi.map((list) => (
+    <li>{list}</li>
+  ))
   return (
     <>
       <div className="MainDiv">
@@ -60,12 +73,10 @@ function Home() {
                 </span>
               </p>
             </div> */}
-            {sequenceLi.map((list) => (
-              <li>{list}</li>
-            ))}
+            {sequenceLiList}
           </div>
           <div className="advertisementImg">
-            <img src="https://image-comic.pstatic.net/webtoon/783052/thu…l_IMAG02_9c04cf6b-2343-4e55-8cad-f1821e01d323.jpg" />
+            {/* <img src="https://image-comic.pstatic.net/webtoon/783052/thu…l_IMAG02_9c04cf6b-2343-4e55-8cad-f1821e01d323.jpg" /> */}
           </div>
           <div className="arrow-left"></div>
           <div className="slideDiv1">
@@ -91,7 +102,7 @@ function Home() {
           <div className="arrow-right"></div>
           <div className="slideSub5">
             <h3>새로운 베스트 도전만화</h3>
-            <img src="https://shared-comic.pstatic.net/thumb/nas/user_co…999a5df_885a_4462_b177_1b1e8aed2eae_00000192.JPEG" />
+            {/* <img src="https://shared-comic.pstatic.net/thumb/nas/user_co…999a5df_885a_4462_b177_1b1e8aed2eae_00000192.JPEG" /> */}
             <a>똘기들</a>
             <a>
               동생과 같은 방을 쓰기 싫다는 이유로 기숙사 고등학교에 온 찬미, 1인
@@ -101,7 +112,19 @@ function Home() {
         </div>
         <div className="webtoonMain">
           <div className="recommendWebtoon">
-            <div className="recommendGenre"></div>
+            <div className="recommendGenre">
+              <div className="titleMain">
+                <a>장르별 추천웹툰</a>
+              </div>
+              <div className="genre">
+                <ul>
+                  {genre.map((list) => (
+                    <li>{list}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>{sequenceLiList}</div>
+            </div>
             <div className="recommendBestChallenge"></div>
             <div className="recommendComic"></div>
           </div>
@@ -125,9 +148,7 @@ function Home() {
   );
 }
 
-const Header = styled.div``;
-const MainDiv = styled.div``;
-const Search = styled.div`
+/*const Search = styled.div`
   position: relative;
   width: 300px;
   background-color: #fff;
@@ -146,6 +167,6 @@ const Search = styled.div`
     right: 12px;
     margin: 0;
   }
-`;
+`;*/
 
 export default Home;
