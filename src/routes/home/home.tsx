@@ -124,6 +124,11 @@ function Home() {
                 </ul>
               </div>
               <div>{sequenceLiList}</div>
+              <div className="recommendWebtoon">
+                <img/>
+                <h3>에웅식당</h3>
+                <p>afewef</p>
+              </div>
             </div>
             <div className="recommendBestChallenge"></div>
             <div className="recommendComic"></div>
@@ -144,6 +149,14 @@ function Home() {
           </S.webtoonSub>
         </div>
       </div>
+      <div className="bottomDiv">
+        <hr/>
+        <h3>
+          <a> 웹툰 </a>|<a> 웹소설 </a>|<a> 시리즈<div>웹소설, 만화</div></a>|<a> 시리즈온 <div>영화,방송</div></a>
+          </h3>
+        <hr/>
+      </div>
+
     </>
   );
 }
